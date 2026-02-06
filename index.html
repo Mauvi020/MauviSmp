@@ -1,149 +1,135 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>MauviSMP - Minecraft Server</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background: linear-gradient(135deg, #ff512f, #f09819);
-            color: #fff;
-        }
+  <meta charset="UTF-8">
+  <title>DemonCoreSMP – MC Server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #0a0a12, #000);
+      color: #fff;
+      text-align: center;
+    }
 
-        header {
-            padding: 80px 20px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.35);
-        }
+    header {
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #120015, #000);
+    }
 
-        h1 {
-            font-size: 4em;
-            margin: 0;
-            letter-spacing: 3px;
-        }
+    h1 {
+      font-size: 3.5rem;
+      color: #ff3b3b;
+      text-shadow: 0 0 20px #ff3b3b;
+    }
 
-        .subtitle {
-            font-size: 1.5em;
-            margin-top: 10px;
-            opacity: 0.9;
-        }
+    .ip-box {
+      margin: 30px auto;
+      display: inline-block;
+      padding: 15px 30px;
+      border: 2px solid #00e5ff;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      background: rgba(0, 229, 255, 0.1);
+      box-shadow: 0 0 15px #00e5ff;
+    }
 
-        .ip-box {
-            margin-top: 30px;
-            display: inline-block;
-            background: rgba(0,0,0,0.5);
-            padding: 20px 40px;
-            border-radius: 15px;
-            font-size: 1.5em;
-            box-shadow: 0 0 25px rgba(0,0,0,0.4);
-        }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-        main {
-            padding: 60px 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            max-width: 1100px;
-            margin: auto;
-        }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
 
-        .section {
-            background: rgba(0,0,0,0.35);
-            border-radius: 18px;
-            padding: 35px;
-            box-shadow: 0 0 30px rgba(0,0,0,0.35);
-        }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+      transition: 0.3s;
+    }
 
-        .section h2 {
-            font-size: 2.2em;
-            margin-bottom: 15px;
-            color: #ffd27f;
-        }
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    }
 
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
+    footer {
+      padding: 30px;
+      background: #05050a;
+      color: #888;
+      font-size: 0.9rem;
+    }
 
-        .feature-box {
-            background: rgba(255,255,255,0.08);
-            padding: 20px;
-            border-radius: 12px;
-            font-size: 1.2em;
-            text-align: center;
-            transition: transform 0.2s ease, background 0.2s ease;
-        }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 35px;
+      border-radius: 50px;
+      background: linear-gradient(90deg, #ff0000, #ff6a00);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 20px #ff3b3b;
+      transition: 0.3s;
+    }
 
-        .feature-box:hover {
-            transform: scale(1.05);
-            background: rgba(255,255,255,0.15);
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: rgba(0,0,0,0.5);
-            font-size: 1em;
-        }
-
-        a {
-            color: #ffe29f;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    .btn:hover {
+      box-shadow: 0 0 40px #ff3b3b;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>MauviSMP</h1>
-    <div class="subtitle">Dein Survival. Deine Welt. Dein Server.</div>
-    <div class="ip-box">
-        🎮 IP: <b>mauvi.de</b>
-    </div>
+  <h1>DEMONCORESMP</h1>
+  <p>Der dämonische Minecraft Survival Server</p>
+  <div class="ip-box">
+    IP: <b>DemonCore.mine-hoster.net</b>
+  </div>
+  <br>
+  <a class="btn" href="#">Jetzt beitreten</a>
 </header>
 
-<main>
+<section>
+  <h2>⚔️ Server-Features</h2>
 
-    <div class="section">
-        <h2>🔥 Über MauviSMP</h2>
-        <p style="font-size: 1.2em;">
-            MauviSMP ist ein moderner Minecraft Survival Multiplayer Server mit Fokus auf Community,
-            fairen Spielspaß und epische Bauprojekte. Kein Pay2Win, kein Stress – nur echtes SMP-Feeling.
-        </p>
+  <div class="features">
+    <div class="card">
+      <h3>🔥 Der Core</h3>
+      <p>Auf dem Server besitzt jedes Team einen Core, den es beschützen muss.  
+      Wird dein Core zerstört, bist du raus!</p>
     </div>
 
-    <div class="section">
-        <h2>⚔️ Unsere Features</h2>
-        <div class="features">
-            <div class="feature-box">✔️ Reines Survival SMP</div>
-            <div class="feature-box">✔️ Aktive Community</div>
-            <div class="feature-box">✔️ KeinGlücksSpiel</div>
-            <div class="feature-box">✔️ Kein Pay2Win</div>
-            <div class="feature-box">✔️ KeinPVP</div>
-            <div class="feature-box">✔️ Freundliches Team</div>
-        </div>
+    <div class="card">
+      <h3>⛏️ Spawner & Steine</h3>
+      <p>Spezielle Spawner generieren wertvolle Steine, die du sammeln und verkaufen kannst.</p>
     </div>
 
-    <div class="section">
-        <h2>💬 Werde Teil von MauviSMP</h2>
-        <p style="font-size: 1.2em;">
-            Tritt unserem Discord bei und verpasse keine News, Events oder Updates!  
-            <br><br>
-            👉 <a href="#">discord.gg/arBCwWJV6s</a>
-        </p>
+    <div class="card">
+      <h3>💰 Wirtschaftssystem</h3>
+      <p>Verdiene Geld durch Handel, verkaufe Ressourcen und werde der reichste Spieler.</p>
     </div>
 
-</main>
+    <div class="card">
+      <h3>⚡ PvP & Raids</h3>
+      <p>Überfalle gegnerische Basen, verteidige deinen Core und dominiere den Server.</p>
+    </div>
+  </div>
+</section>
 
 <footer>
-    © 2026 MauviSMP | Nicht offiziell mit Mojang oder Microsoft verbunden
+  © 2026 DemonCoreSMP | Nicht offiziell von Mojang
 </footer>
 
 </body>
